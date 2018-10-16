@@ -1,52 +1,12 @@
 us-west-2:
     vpc-cd63f2a4:
-        10.132.40.0/21:
-            name: test
-            routing_table: testers
-
         10.132.48.0/22:
             name: srv
-            routing_table: masters
-
-        10.132.52.0/22:
-            name: build
-            routing_table: builders
-
-        10.132.56.0/22:
-            name: test
-            routing_table: testers
-
-        10.132.60.0/22:
-            name: test
-            routing_table: testers
-
-        10.132.64.0/22:
-            name: try
-            routing_table: try
-
-        10.132.68.0/26:
-            name: bb
-            routing_table: masters
-
-        10.132.68.64/26:
-            name: bb
-            routing_table: masters
-
-        10.132.68.128/26:
-            name: bb
-            routing_table: masters
-
-        10.132.68.192/26:
-            name: bb
-            routing_table: masters
-
-        10.132.156.0/22:
-            name: test
-            routing_table: testers
+            routing_table: default-NAT
 
         10.132.30.0/24:
             name: signing
-            routing_table: signing
+            routing_table: default-NAT
 
         10.132.31.0/24:
             name: upload-nat
@@ -55,69 +15,17 @@ us-west-2:
 
 us-east-1:
     vpc-b42100df:
-        10.134.40.0/21:
-            name: test
-            routing_table: testers
-
         10.134.48.0/22:
             name: srv
-            routing_table: masters
-
-        10.134.52.0/22:
-            name: build
-            routing_table: builders
-
-        10.134.56.0/22:
-            name: test
-            routing_table: testers
-
-        10.134.60.0/22:
-            name: test
-            routing_table: testers
-
-        10.134.64.0/22:
-            name: try
-            routing_table: try
+            routing_table: default-NAT
 
         10.134.68.0/26:
             name: bb
-            routing_table: masters
-
-        10.134.68.64/26:
-            name: bb
-            routing_table: masters
-
-        10.134.68.128/26:
-            name: bb
-            routing_table: masters
-
-        10.134.68.192/26:
-            name: bb
-            routing_table: masters
-
-        10.134.156.0/22:
-            name: test
-            routing_table: testers
-            skip_azs: []
-
-        10.134.160.0/22:
-            name: test
-            routing_table: testers
-            skip_azs: ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d"]
-
-        10.134.164.0/24:
-            name: build
-            routing_table: builders
-            skip_azs: ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d"]
-
-        10.134.165.0/24:
-            name: try
-            routing_table: try
-            skip_azs: ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d"]
+            routing_table: default-NAT
 
         10.134.30.0/24:
             name: signing
-            routing_table: signing
+            routing_table: default-NAT
 
         10.134.31.0/24:
             name: upload-nat
